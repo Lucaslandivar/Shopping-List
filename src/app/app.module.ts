@@ -10,7 +10,14 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RouterModule, Routes } from '@angular/router';
 
+// Add these routes after your component imports
+const appRoutes: Routes = [
+  { path: 'recipes', component: RecipesComponent },
+  { path: 'shopping-list', component: ShoppingListComponent },
+  { path: '', redirectTo: '/recipes', pathMatch: 'full' },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +29,7 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
     ShoppingListComponent,
     ShoppingEditComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent],
 })
