@@ -11,7 +11,12 @@ export class RecipeListComponent {
     new Recipe(
       'A test Recipe',
       'This is simply a test',
-      'https://www.foodandwine.com/recipes/pasta-sausage-basil-and-mustard'
+      'https://img.freepik.com/fotos-gratis/closeup-de-carne-assada-com-molho-legumes-e-batatas-fritas-em-um-prato-sobre-a-mesa_181624-35847.jpg?semt=ais_items_boosted&w=740'
+    ),
+    new Recipe(
+      'A test Recipe',
+      'This is simply a test',
+      'https://img.freepik.com/fotos-gratis/closeup-de-carne-assada-com-molho-legumes-e-batatas-fritas-em-um-prato-sobre-a-mesa_181624-35847.jpg?semt=ais_items_boosted&w=740'
     ),
   ];
 
